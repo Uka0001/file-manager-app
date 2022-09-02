@@ -15,7 +15,7 @@ public class Help extends Command {
 
         StringBuilder result = new StringBuilder("Available commands:\n");
         if (commands != null) {
-            for (String each: commands.keySet()){
+            for (String each : commands.keySet()) {
                 result.append(each).append("\n");
             }
         }

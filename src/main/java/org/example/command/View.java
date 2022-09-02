@@ -7,7 +7,7 @@ import java.io.File;
 import java.nio.charset.StandardCharsets;
 import java.util.List;
 
-public class View extends Command {
+public class View extends Command implements FindFile {
     public View(Context context) {
         super(context);
     }
@@ -22,7 +22,7 @@ public class View extends Command {
         return FileUtils.readFileToString(file, StandardCharsets.UTF_8);
     }
 
-    private File findFile(List<String> args) {
+    public File findFile(List<String> args) {
         if (args.isEmpty()) {
             return null;
         } else {

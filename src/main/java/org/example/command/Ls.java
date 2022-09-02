@@ -15,7 +15,7 @@ public class Ls extends Command {
         File[] allFiles = file.listFiles();
         StringBuilder result = new StringBuilder();
         if (allFiles != null) {
-            for (File each: allFiles){
+            for (File each : allFiles) {
                 result.append(each.getName()).append(":").append(each.getUsableSpace()).append("\n");
             }
         }

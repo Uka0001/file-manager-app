@@ -6,8 +6,8 @@ import java.io.File;
 import java.util.List;
 import java.util.Scanner;
 
-public class Mkfile extends Command{
-    public Mkfile(Context context) {
+public class MkfilePath extends Command {
+    public MkfilePath(Context context) {
         super(context);
     }
 
@@ -17,15 +17,19 @@ public class Mkfile extends Command{
         System.out.println("Enter the path to create a file: ");
         Scanner sc = new Scanner(System.in);
         String path = sc.next();
-        System.out.println("Enter the name of the desired file: ");
-        path = path+sc.next();
+        if (args == null || args.isEmpty()) {
+            System.out.println("Enter the name of the desired file: ");
+            path = path + File.separator + sc.next();
+        } else {
+            path = path + File.separator + args.toString();
+        }
         //Creating a File object
         File file = new File(path);
         //Creating the file
         boolean bool = file.createNewFile();
-        if(bool){
+        if (bool) {
             System.out.println("File created successfully");
-        }else{
+        } else {
             System.out.println("Sorry couldn’t create specified file");
         }
         return file.toString();

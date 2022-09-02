@@ -1,5 +1,8 @@
 package org.example.command;
 
-public interface findFile {
+import java.io.File;
+import java.util.List;
 
+public interface FindFile {
+    File findFile(List<String> args);
 }
