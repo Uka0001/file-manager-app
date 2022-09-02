@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d110453-9508-437a-8855-b223d770ab1f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Task.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/command/Find.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/command/View.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/0/4096083590daac273c51d807b6a053026a3ab64d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/8/b88c448d32e72ea8ed4d3cac1ce0a86566c8f752" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/9/f91976cdb3b21eaf40835925fbed27e6be67cc7a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/Find.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/command/Find.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/command/View.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +91,7 @@
       <option name="presentableId" value="Default" />
       <updated>1662123420864</updated>
       <workItem from="1662123423808" duration="1916000" />
-      <workItem from="1662126262237" duration="6099000" />
+      <workItem from="1662126262237" duration="7767000" />
     </task>
     <servers />
   </component>

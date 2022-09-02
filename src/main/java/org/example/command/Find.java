@@ -1,4 +1,4 @@
 package org.example.command;
 
-public class Find extends  {
+public class Find {
 }
