@@ -15,20 +15,10 @@ public class View extends Command implements FindFile {
     @SneakyThrows
     @Override
     public String execute(List<String> args) {
-        File file = findFile(args);
+        File file = findFile(args, context);
         if (file == null || !file.exists()) {
             return "File doesnt exist";
         }
         return FileUtils.readFileToString(file, StandardCharsets.UTF_8);
-    }
-
-    public File findFile(List<String> args) {
-        if (args.isEmpty()) {
-            return null;
-        } else {
-            String fileName = args.get(0);
-            File currentDirectory = context.getCurrentDirectory();
-            return new File(currentDirectory, fileName);
-        }
     }
 }

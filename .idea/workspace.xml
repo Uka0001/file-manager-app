@@ -6,13 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="3d110453-9508-437a-8855-b223d770ab1f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Task.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resoursestest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resoursestest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/AddText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/command/AddText.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/Find.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/command/Find.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/Ls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/command/Ls.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/Mkdir.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/command/Mkdir.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/Mkfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/command/Mkfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/Open.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/command/Open.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/Rm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/command/Rm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/command/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testdir/test1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testdir/test2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testdir/test3.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +64,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/testdir" />
+      <recent name="$PROJECT_DIR$/src/test" />
       <recent name="$PROJECT_DIR$/src/resourses" />
       <recent name="$PROJECT_DIR$/src/main/java/org/example/command" />
       <recent name="$PROJECT_DIR$/src/main/java/org/example" />
