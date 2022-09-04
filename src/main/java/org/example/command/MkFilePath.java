@@ -6,8 +6,8 @@ import java.io.File;
 import java.util.List;
 import java.util.Scanner;
 
-public class MkfilePath extends Command {
-    public MkfilePath(Context context) {
+public class MkFilePath extends Command {
+    public MkFilePath(Context context) {
         super(context);
     }
 

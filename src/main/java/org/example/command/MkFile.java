@@ -5,8 +5,8 @@ import lombok.SneakyThrows;
 import java.io.File;
 import java.util.List;
 
-public class Mkfile extends Command {
-    public Mkfile(Context context) {
+public class MkFile extends Command {
+    public MkFile(Context context) {
         super(context);
     }
 

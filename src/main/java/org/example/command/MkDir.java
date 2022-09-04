@@ -2,24 +2,15 @@ package org.example.command;
 
 import java.io.File;
 import java.util.List;
-import java.util.Scanner;
 
-public class MkdirPath extends Command {
-    public MkdirPath(Context context) {
+public class MkDir extends Command {
+    public MkDir(Context context) {
         super(context);
     }
 
     @Override
     public String execute(List<String> args) {
-        System.out.println("Enter the path to create a directory: ");
-        Scanner sc = new Scanner(System.in);
-        String path = sc.next();
-        if (args == null || args.isEmpty()) {
-            System.out.println("Enter the name of the desired a directory: ");
-            path = path + File.separator + sc.next();
-        } else {
-            path = path + File.separator + args.toString();
-        }
+        String path = args.get(0);
         //Creating a File object
         File file = new File(path);
         //Creating the directory
