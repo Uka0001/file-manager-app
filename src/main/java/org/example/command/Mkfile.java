@@ -13,7 +13,7 @@ public class Mkfile extends Command {
     @SneakyThrows
     @Override
     public String execute(List<String> args) {
-        String name = args.toString();
+        String name = args.get(0);
         //Creating a File object
         File file = new File(name);
         //Creating the file

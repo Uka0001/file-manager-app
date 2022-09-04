@@ -10,7 +10,7 @@ public class Mkdir extends Command {
 
     @Override
     public String execute(List<String> args) {
-        String path = args.toString();
+        String path = args.get(0);
         //Creating a File object
         File file = new File(path);
         //Creating the directory

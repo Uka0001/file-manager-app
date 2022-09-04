@@ -16,7 +16,7 @@ public class AddText extends Command implements FindFile {
     @SneakyThrows
     @Override
     public String execute(List<String> args) {
-        File file = findFile(args);
+        File file = findFile(args, context);
         System.out.println("Enter the text that you want to \n" +
                 "add to the end of the file");
         Scanner scanner = new Scanner(System.in);
@@ -29,16 +29,5 @@ public class AddText extends Command implements FindFile {
             i.printStackTrace();
         }
         return FileUtils.readFileToString(file, StandardCharsets.UTF_8);
-    }
-
-    @Override
-    public File findFile(List<String> args) {
-        if (args.isEmpty()) {
-            return null;
-        } else {
-            String fileName = args.get(0);
-            File currentDirectory = context.getCurrentDirectory();
-            return new File(currentDirectory, fileName);
-        }
     }
 }

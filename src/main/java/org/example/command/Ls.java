@@ -1,10 +1,12 @@
 package org.example.command;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.List;
+import org.apache.commons.io.FilenameUtils;
 
-public class LsTable extends Command {
-    public LsTable(Context context) {
+public class Ls extends Command {
+    public Ls(Context context) {
         super(context);
     }
 
@@ -76,7 +78,9 @@ public class LsTable extends Command {
                     }
                     if (arg == 'e') {
                         for (File files : allFiles) {
-                            System.out.format(leftAlignFormat, files.getName(), files.isFile());
+                            List<String> name = new ArrayList<>(List.of(args.get(0).split(".")));
+                            String line = name.get(1);
+                            System.out.format(leftAlignFormat, files.getName(), FilenameUtils.getExtension(String.valueOf(files)));
                         }
                     }
                 }
