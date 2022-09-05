@@ -1,5 +1,6 @@
 package org.example.command;
-
+/*
+Код Поліни, зловив баг, не полетіло. Нід фікс*/
 import lombok.SneakyThrows;
 
 import java.io.File;
