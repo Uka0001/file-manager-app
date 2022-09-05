@@ -7,8 +7,6 @@ Y
 )src/main/java/org/example/command/Cd.java,5/a/5a0e47207e4f0fa59343758ef300af27b3764d87
 [
 +src/main/java/org/example/command/Help.java,3/8/38a48762531ba8f801de91b9adfbd5ee1557b414
-S
-#src/main/java/org/example/Main.java,0/b/0ba1b9c7a4878802f938e331cc2d8a042087ec6b
 ]
 -src/main/java/org/example/command/MkFile.java,5/c/5c32243632b81e320856e565e186166bf3517abb
 [

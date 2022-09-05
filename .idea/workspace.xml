@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d110453-9508-437a-8855-b223d770ab1f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/Ls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/command/Ls.java" afterDir="false" />
     </list>
@@ -94,7 +94,7 @@
       <workItem from="1662123423808" duration="1916000" />
       <workItem from="1662126262237" duration="9817000" />
       <workItem from="1662139142884" duration="9976000" />
-      <workItem from="1662355457682" duration="2303000" />
+      <workItem from="1662355457682" duration="6039000" />
     </task>
     <servers />
   </component>
@@ -165,6 +165,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/command/MkFilePath.java</url>
           <line>29</line>
           <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/command/Ls.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
