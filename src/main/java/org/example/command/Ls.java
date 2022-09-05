@@ -23,31 +23,31 @@ public class Ls extends Command {
         } else {
             int argsLength = args.get(0).toCharArray().length;
             if (argsLength == 1) {
-                leftAlignFormat = "| %-20s | %-4d |%n";
+                leftAlignFormat = "| %-20s |%n";
                 System.out.format("+----------------------+-------------+%n");
-                System.out.format("|        File name     |   " + args.get(0).toCharArray()[0] + "   |%n");
+                System.out.format("|        File name     |       " + args.get(0).toCharArray()[0] + "   |%n");
                 System.out.format("+----------------------+-------------+%n");
             }else if (argsLength == 2) {
-                leftAlignFormat = "| %-20s | %-4d | %-4d |%n";
-                System.out.format("+----------------------+-------------+%n");
+                leftAlignFormat = "| %-20s |%n";
+                System.out.format("+----------------------+-------------+-------------+%n");
                 System.out.format("|        File name     |   " + args.get(0).toCharArray()[0] + "   |   " +
                         args.get(0).toCharArray()[1] + "   |%n");
-                System.out.format("+----------------------+-------------+%n");
+                System.out.format("+----------------------+-------------+-------------+%n");
             } else if (argsLength == 3) {
-                leftAlignFormat = "| %-20s | %-4d | %-4d | %-4d |%n";
-                System.out.format("+----------------------+-------------+%n");
+                leftAlignFormat = "| %-20s |%n";
+                System.out.format("+----------------------+-------------+-------------+-------------+%n");
                 System.out.format("|        File name     |   " + args.get(0).toCharArray()[0] + "   |   " +
                         args.get(0).toCharArray()[1] +  "   |   " +
                         args.get(0).toCharArray()[2] + "   |%n");
-                System.out.format("+----------------------+-------------+%n");
+                System.out.format("+----------------------+-------------+-------------+-------------+%n");
             } else if (argsLength == 4) {
-                leftAlignFormat = "| %-20s | %-4d | %-4d | %-4d | %-4d | %n";
-                System.out.format("+----------------------+-------------+%n");
+                leftAlignFormat = "| %-20s | %n";
+                System.out.format("+----------------------+-------------+-------------+-------------+-------------+%n");
                 System.out.format("|        File name     |   " + args.get(0).toCharArray()[0] + "   |   " +
                         args.get(0).toCharArray()[1] +  "   |   " +
                         args.get(0).toCharArray()[2] + "   |   " +
                         args.get(0).toCharArray()[3] + "   |%n");
-                System.out.format("+----------------------+-------------+%n");
+                System.out.format("+----------------------+-------------+-------------+-------------+-------------+%n");
             }
         }
 
@@ -59,31 +59,31 @@ public class Ls extends Command {
         } else if (allFiles != null) {
             for (File each : allFiles) {
                 char[] character = args.get(0).toCharArray();
-                System.out.format(leftAlignFormat, each.getName());
+                StringBuilder sb = new StringBuilder();
+
                 for (char arg : character) {
                     if (arg == 's') {
                         for (File files : allFiles) {
-                            System.out.format(leftAlignFormat, files.getUsableSpace());
+                            sb.append(files.getUsableSpace());
                         }
                     }
                     if (arg == 'r') {
                         for (File files : allFiles) {
-                            System.out.format(leftAlignFormat, files.canRead());
+                            sb.append(files.canRead());
                         }
                     }
                     if (arg == 'w') {
                         for (File files : allFiles) {
-                            System.out.format(leftAlignFormat, files.canWrite());
+                            sb.append(files.canWrite());
                         }
                     }
                     if (arg == 'e') {
                         for (File files : allFiles) {
-                            List<String> name = new ArrayList<>(List.of(args.get(0).split(".")));
-                            String line = name.get(1);
-                            System.out.format(leftAlignFormat, files.getName(), FilenameUtils.getExtension(String.valueOf(files)));
+                            sb.append(FilenameUtils.getExtension(String.valueOf(files)));
                         }
                     }
                 }
+                System.out.format(leftAlignFormat, each.getName(), sb);
             }
         }
         System.out.format("+----------------------+%n");
