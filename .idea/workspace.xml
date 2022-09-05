@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d110453-9508-437a-8855-b223d770ab1f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/command/LsSimple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/command/ArgsUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/command/LsSergey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/LsSimple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/command/LsSimple.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +97,7 @@
       <workItem from="1662123423808" duration="1916000" />
       <workItem from="1662126262237" duration="9817000" />
       <workItem from="1662139142884" duration="9976000" />
+      <workItem from="1662355457682" duration="708000" />
     </task>
     <servers />
   </component>

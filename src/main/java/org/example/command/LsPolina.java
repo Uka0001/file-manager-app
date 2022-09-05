@@ -9,8 +9,8 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 
-public class LsSimple extends Command {
-    public LsSimple(Context context) {
+public class LsPolina extends Command {
+    public LsPolina(Context context) {
         super(context);
     }
 

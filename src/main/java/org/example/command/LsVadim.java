@@ -10,12 +10,11 @@ see also here -https://stackoverflow.com/questions/3522454/how-to-implement-a-tr
 * */
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.util.List;
 import java.util.Objects;
 
-public class LsTreeLine extends Command {
-    public LsTreeLine(Context context) {
+public class LsVadim extends Command {
+    public LsVadim(Context context) {
         super(context);
     }
 
