@@ -19,8 +19,7 @@ public class LsTree extends Command implements FindFile {
 
     private static void printDirectoryTree(List<String> args, File directory, int indent,
                                            StringBuilder sb, int depth) {
-        // додав перевірку на порожній аргумент,
-        // щоб не ловити нуль поінт ексепшин
+        // Add null point exception check
         int askedDepth;
         if (!args.isEmpty()){
             askedDepth = Integer.parseInt(args.get(0));
@@ -33,7 +32,7 @@ public class LsTree extends Command implements FindFile {
         sb.append(directory.getName());
         sb.append("/");
         sb.append("\n");
-        // Оптимізував трошки код, щоб не було дублювання умов
+        // Optimize code to run out of duplicates in if statements
         for (File file : directory.listFiles()) {
 
             if (file.isDirectory() & !args.isEmpty() & ++depth < askedDepth) {

@@ -17,19 +17,24 @@ public class AddText extends Command implements FindFile {
     @SneakyThrows
     @Override
     public String execute(List<String> args) {
+        if (args.isEmpty()){
+            return "Enter the args pls.";
+        }
         File file = findFile(args, context);
         System.out.println("Where do you want to add your text?" +
                 "Enter: position or end");
         Scanner scanner = new Scanner(System.in);
         String answer = scanner.next();
         System.out.println("You chose: " + answer);
-        if (answer.equalsIgnoreCase("end") & !args.isEmpty()) {
-            return writeEnd(file);
-        } else if (answer.equalsIgnoreCase("position") & !args.isEmpty()) {
-            return writePosition(file);
-        } else {
+        if  (args.isEmpty()) {
             return "Something went wrong." +
                     "Try again with new command and arguments";
+        } else if (answer.equalsIgnoreCase("position")) {
+            return writePosition(file);
+        } else if (answer.equalsIgnoreCase("end")){
+            return writeEnd(file);
+        } else {
+            return "Repeat your command and arguments";
         }
     }
 

@@ -3,12 +3,12 @@ package org.example.command;
 import java.io.File;
 import java.util.List;
 
-//шукаєм файл
+// Find file and check if args is not empty
 public interface FindFile {
 
     public default File findFile(List<String> args, Context context) {
         File currentDirectory = context.getCurrentDirectory();
-        // перевіряємо чи існує аргумент та чи існує файл
+        // Check if args is not empty
         if (args.isEmpty()) {
             return null;
         } else {

@@ -28,7 +28,7 @@ public class Cd extends Command {
                 }
             }
         }
-        // виводжу папку в якій знаходимся
+        // output current directory
         return context.getCurrentDirectory().toString();
     }
 }
