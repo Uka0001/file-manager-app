@@ -1,93 +1,84 @@
 package org.example.command;
-/*
-need fix, my method*/
 
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
+import org.apache.commons.lang3.mutable.MutableInt;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
+import java.util.stream.Collectors;
 
-public class Ls extends Command {
-    public Ls(Context context) {
+public class LsVlad extends Command {
+
+    public LsVlad(Context context) {
         super(context);
     }
 
     @Override
     public String execute(List<String> args) {
-        File file = context.getCurrentDirectory();
-        File[] allFiles = file.listFiles();
-        return buildTable(allFiles, args);
+        args = args.isEmpty() ? args : Arrays.asList(args.get(0).split(""));
+        List<List<String>> result = new ArrayList<>();
+        result.add(createHeaders(args));
+        result.addAll(createBody(args));
+        printTable(result, getPreCalculatedStringFormat(result));
+        return "";
     }
 
-    private String buildTable(File[] allFiles, List<String> args) {
-        StringBuilder sb = new StringBuilder();
-        buildHeader(allFiles, args);
-        buildRow(allFiles, args, sb);
-        return sb.toString();
+    private void printTable(List<List<String>> result, String format) {
+        result.forEach(row -> {
+            System.out.printf((format) + "%n", row.toArray());
+        });
     }
 
-    private void buildRow(File[] allFiles, List<String> args, StringBuilder sb) {
-        String leftAlignFormat = "";
-        leftAlignFormat = "| %-20s |%n";
-        if (allFiles != null & args == null || args.isEmpty()) {
-            for (File each : allFiles) {
-                System.out.format(leftAlignFormat, each.getName());
-                System.out.format("+----------------------+%n");
-            }
-        } else if (allFiles != null) {
+    public String getPreCalculatedStringFormat(List<List<String>> columns) {
+        int columnsCount = columns.get(0).size();
+        List<Integer> result = new ArrayList<>();
+        for (MutableInt column = new MutableInt(0);
+             column.getValue() < columnsCount; column.increment()) {
+            result.add(columns.stream().
+                    map(row -> row.get(column.getValue())).
+                    map(String::length).
+                    max(Integer::compare).get());
+        }
+        return "| " + result.stream().map(v -> "%" + v + "s").collect(Collectors.joining(" | ")) + " |";
+    }
 
-            for (File files : allFiles) {
-                StringBuilder flag = new StringBuilder("");
-                if (args.contains('s')) {
-                        flag.append(files.getUsableSpace());
-                    }
-                    if (args.contains('r')) {
-                        flag.append(files.canRead());
-                    }
-                    if (args.contains('w')) {
-                        flag.append(files.canWrite());
-                    }
-                    if (args.contains('e')) {
-                        flag.append(FilenameUtils.getExtension(String.valueOf(files)));
-                    }
+    private List<List<String>> createBody(List<String> args) {
+        List<List<String>> body = new ArrayList<>();
+        for (File f : Objects.requireNonNull(context.getCurrentDirectory().listFiles())) {
+            body.add(buildRow(args, f));
+        }
+        return body;
+    }
 
-                sb.append(String.format(leftAlignFormat, files.getName(), flag.toString()));
+    private List<String> buildRow(List<String> args, File file) {
+        List<String> row = new ArrayList<>();
+        row.add(file.getName());
+        for (String flag : args) {
+            switch (flag) {
+                case "s" -> row.add(String.valueOf(FileUtils.sizeOf(file)));
+                case "r" -> row.add(String.valueOf(file.canRead()));
+                case "w" -> row.add(String.valueOf(file.canWrite()));
+                case "e" -> row.add(file.isHidden() ? "" : FilenameUtils.getExtension(file.getName()));
             }
         }
+        return row;
     }
 
-    private void buildHeader(File[] allFiles, List<String> args) {
-        String leftAlignFormat = "";
-        leftAlignFormat = "| %-20s |%n";
-        if (args == null || args.isEmpty()) {
-            System.out.format("+----------------------+%n");
-            System.out.format("|        File name     |%n");
-            System.out.format("+----------------------+%n");
-        } else {
-            int argsLength = args.get(0).toCharArray().length;
-            if (argsLength == 1) {
-                System.out.format("+----------------------+-------------+%n");
-                System.out.format("|        File name     |       " + args.get(0).toCharArray()[0] + "     |%n");
-                System.out.format("+----------------------+-------------+%n");
-            } else if (argsLength == 2) {
-                System.out.format("+----------------------+-------------+-------------+%n");
-                System.out.format("|        File name     |" +
-                        "       " + args.get(0).toCharArray()[0] + "     |" +
-                        "       " + args.get(0).toCharArray()[1] + "     |%n");
-                System.out.format("+----------------------+-------------+-------------+%n");
-            } else if (argsLength == 3) {
-                System.out.format("+----------------------+-------------+-------------+-------------+%n");
-                System.out.format("|        File name     |       " + args.get(0).toCharArray()[0] + "     |" +
-                        "       " + args.get(0).toCharArray()[1] + "     |" +
-                        "       " + args.get(0).toCharArray()[2] + "     |%n");
-                System.out.format("+----------------------+-------------+-------------+-------------+%n");
-            } else if (argsLength == 4) {
-                System.out.format("+----------------------+-------------+-------------+-------------+-------------+%n");
-                System.out.format("|        File name     |       " + args.get(0).toCharArray()[0] + "     |" +
-                        "       " + args.get(0).toCharArray()[1] + "     |" +
-                        "       " + args.get(0).toCharArray()[2] + "     |       " + args.get(0).toCharArray()[3] + "     |%n");
-                System.out.format("+----------------------+-------------+-------------+-------------+-------------+%n");
+    private List<String> createHeaders(List<String> args) {
+        List<String> header = new ArrayList<>();
+        header.add("File name");
+        for (String flag : args) {
+            switch (flag) {
+                case "s" -> header.add("Size");
+                case "r" -> header.add("Readable");
+                case "w" -> header.add("Writable");
+                case "e" -> header.add("Extension");
             }
         }
+        return header;
     }
 }
