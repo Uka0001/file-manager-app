@@ -13,17 +13,14 @@ public class MkDir extends Command implements FindFile {
         if (args.isEmpty()){
             return "Enter the args pls.";
         }
-        String path = args.get(0);
         //Creating a File object
-        File file = new File(path);
-        findFile(args, context);
+        File file = new File(findFile(args, context).toURI());
         //Creating the directory
         boolean bool = file.mkdir();
         if (bool) {
-            System.out.println("Directory created successfully");
+            return file.getName() + "Directory created successfully.";
         } else {
-            System.out.println("Sorry couldn’t create specified directory");
+            return "Sorry couldn’t create specified directory";
         }
-        return file.getName();
     }
 }

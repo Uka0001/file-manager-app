@@ -5,28 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d110453-9508-437a-8855-b223d770ab1f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/AddText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/command/AddText.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/ArgsUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/Cd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/command/Cd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/command/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/Find.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/command/Find.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/FindFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/command/FindFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/Ls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/command/Ls.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/LsCommands.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/LsPolina.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/LsSergey.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/LsTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/command/LsTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/LsVadim.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/LsVlad.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/MkDir.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/command/MkDir.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/MkFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/command/MkFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/Open.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/command/Open.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/Pwd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/command/Pwd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/View.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,11 +55,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/testdir" />
       <recent name="$PROJECT_DIR$/src/test" />
       <recent name="$PROJECT_DIR$/src/resourses" />
       <recent name="$PROJECT_DIR$/src/main/java/org/example/command" />
-      <recent name="$PROJECT_DIR$/src/main/java/org/example" />
     </key>
   </component>
   <component name="RunManager">
@@ -116,7 +96,7 @@
       <workItem from="1662355457682" duration="6797000" />
       <workItem from="1662365049370" duration="7507000" />
       <workItem from="1662449865399" duration="4626000" />
-      <workItem from="1662468044015" duration="4188000" />
+      <workItem from="1662468044015" duration="5166000" />
     </task>
     <servers />
   </component>
