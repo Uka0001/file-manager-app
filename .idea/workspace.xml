@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d110453-9508-437a-8855-b223d770ab1f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/newr.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/command/new.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/MkDir.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/command/MkDir.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/MkDirPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/command/MkDirPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/MkFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/MkFilePath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/command/MkFilePath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/Open.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/command/Open.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/Rm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/command/Rm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +104,8 @@
       <workItem from="1662355457682" duration="6797000" />
       <workItem from="1662365049370" duration="7507000" />
       <workItem from="1662449865399" duration="4626000" />
-      <workItem from="1662468044015" duration="5166000" />
+      <workItem from="1662468044015" duration="8474000" />
+      <workItem from="1662497596043" duration="2938000" />
     </task>
     <servers />
   </component>
@@ -129,14 +138,19 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="10" />
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/command/MkDir.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/command/MkDirPath.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="11" />
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/command/MkDir.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/command/MkDir.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="49" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

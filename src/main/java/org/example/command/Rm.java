@@ -15,21 +15,15 @@ public class Rm extends Command implements FindFile {
     @SneakyThrows
     @Override
     public String execute(List<String> args) {
-        if (args.get(0).equals("-r")) {
-            //видаляємо рекурсивно поточну директорію
+        if (findFile(args, context).equals("-r")) {
+            //Delete dir with recursion
             File file = context.getCurrentDirectory();
             FileUtils.deleteDirectory(file);
             return "Recursive deleting successfully";
         } else {
-            // видаляємо окремий файл або директорію
-            if (new File(args.get(0)).exists()) {
-                findFile(args, context).delete();
-                return "Deleting successfully";
-            } else {
-                return "Reenter command and arguments pls." +
-                        " Something vent wrong." +
-                        "File or directory is not exist";
-            }
+            // Delete file or directory only
+            findFile(args, context).delete();
+            return "Deleting successfully";
         }
     }
 }

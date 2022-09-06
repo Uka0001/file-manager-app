@@ -15,13 +15,7 @@ public class Open extends Command implements FindFile {
     @SneakyThrows
     @Override
     public String execute(List<String> args) {
-        if (args.isEmpty()){
-            return "Enter the args pls.";
-        }
         File file = findFile(args, context);
-        if (file == null || !file.exists()) {
-            return "File doesnt exist";
-        }
         return FileUtils.readFileToString(file, StandardCharsets.UTF_8) + " - your result.";
     }
 }

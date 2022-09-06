@@ -10,6 +10,7 @@ public class Pwd extends Command {
 
     @Override
     public String execute(List<String> args) {
-        return context.getCurrentDirectory().getAbsolutePath() + "You are now here";
+        return context.getCurrentDirectory()
+                .getAbsolutePath() + " - you are here";
     }
 }
