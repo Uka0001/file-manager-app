@@ -11,9 +11,9 @@ import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
-public class LsNew extends Command {
+public class LsVlad extends Command {
 
-    public LsNew(Context context) {
+    public LsVlad(Context context) {
         super(context);
     }
 

@@ -11,6 +11,7 @@ import java.util.List;
 
 public class LsSergey extends Command {
     private static final String DELIMETER = " ";
+
     public LsSergey(Context context) {
         super(context);
     }
@@ -56,7 +57,7 @@ public class LsSergey extends Command {
         }
         for (File file : allFiles) {
             res.append(tabs).append(file.getName()).append("\n");
-            res.append(getChilds(file.listFiles(), depth-1, tabs + "\t"));
+            res.append(getChilds(file.listFiles(), depth - 1, tabs + "\t"));
         }
         return res.toString();
     }

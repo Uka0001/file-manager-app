@@ -10,34 +10,35 @@ public class LsTree extends Command implements FindFile {
 
     @Override
     public String execute(List<String> args) {
-        // Додав варіант вибора папки:
-        // з варіантом поточної папки - якщо не має аргументу і
-        // з варіантом вибору папки якщо є аргумент
-        File directory;
-        if (args.isEmpty()){
-            directory = context.getCurrentDirectory();
-        } else {
-            directory = new File(args.get(0));
-        }
-        if (!directory.isDirectory()) {
-            return "Argument is not a Directory name";
-        }
+        File directory = context.getCurrentDirectory();
         int indent = 0;
         StringBuilder sb = new StringBuilder();
-        printDirectoryTree(directory, indent, sb);
+        printDirectoryTree(args, directory, indent, sb, 0);
         return sb.toString();
     }
 
-    private static void printDirectoryTree(File directory, int indent,
-                                           StringBuilder sb) {
+    private static void printDirectoryTree(List<String> args, File directory, int indent,
+                                           StringBuilder sb, int depth) {
+        // додав перевірку на порожній аргумент,
+        // щоб не ловити нуль поінт ексепшин
+        int askedDepth;
+        if (!args.isEmpty()){
+            askedDepth = Integer.parseInt(args.get(0));
+        } else {
+            askedDepth = 1;
+        }
+
         sb.append(getIndentString(indent));
         sb.append("+--");
         sb.append(directory.getName());
         sb.append("/");
         sb.append("\n");
+        // Оптимізував трошки код, щоб не було дублювання умов
         for (File file : directory.listFiles()) {
-            if (file.isDirectory()) {
-                printDirectoryTree(file, indent + 1, sb);
+
+            if (file.isDirectory() & !args.isEmpty() & ++depth < askedDepth) {
+                printDirectoryTree(args, file, indent + 1, sb, depth);
+
             } else {
                 printFile(file, indent + 1, sb);
             }
@@ -53,10 +54,6 @@ public class LsTree extends Command implements FindFile {
     }
 
     private static String getIndentString(int indent) {
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < indent; i++) {
-            sb.append("|  ");
-        }
-        return sb.toString();
+        return "|  ".repeat(Math.max(0, indent));
     }
 }

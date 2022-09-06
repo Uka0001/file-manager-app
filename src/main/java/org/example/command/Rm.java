@@ -4,7 +4,6 @@ import lombok.SneakyThrows;
 import org.apache.commons.io.FileUtils;
 
 import java.io.File;
-import java.util.Arrays;
 import java.util.List;
 
 public class Rm extends Command implements FindFile {

@@ -7,7 +7,21 @@
     <list default="true" id="3d110453-9508-437a-8855-b223d770ab1f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Task.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resoursestest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resoursestest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/Cd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/command/Cd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/command/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/Find.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/command/Find.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/Help.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/command/Help.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/Ls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/command/Ls.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/LsPolina.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/command/LsPolina.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/LsSergey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/command/LsSergey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/LsTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/command/LsTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/LsVadim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/command/LsVadim.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/LsVlad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/command/LsVlad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/command/Rm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/command/Rm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +108,9 @@
       <workItem from="1662123423808" duration="1916000" />
       <workItem from="1662126262237" duration="9817000" />
       <workItem from="1662139142884" duration="9976000" />
-      <workItem from="1662355457682" duration="6039000" />
+      <workItem from="1662355457682" duration="6797000" />
+      <workItem from="1662365049370" duration="7507000" />
+      <workItem from="1662449865399" duration="3100000" />
     </task>
     <servers />
   </component>
@@ -128,7 +144,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
-          <line>20</line>
+          <line>24</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -168,8 +184,38 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/command/Ls.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="22" />
+          <line>38</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/command/Ls.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/command/Ls.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/command/Ls.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/command/Ls.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/command/Ls.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/command/Ls.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

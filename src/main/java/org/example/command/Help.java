@@ -19,6 +19,7 @@ public class Help extends Command {
                 result.append(each).append("\n");
             }
         }
-        return result.toString();
+        return result.toString() + "\n ! Don`t miss to enter needed argument " +
+                "after the command name split by enter ! \n Choose the command and let the party started! :)";
     }
 }

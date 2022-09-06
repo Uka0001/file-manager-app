@@ -1,4 +1,5 @@
 view resoursestest.txt
+line mit
 next line one position 1
  line on position 1
  line on position 1
@@ -10,3 +11,4 @@ newline1
 
 new
 one new line to the end
+fbvjf fjjfgv

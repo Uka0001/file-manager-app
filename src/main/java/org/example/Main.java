@@ -17,7 +17,11 @@ public class Main {
         Map<String, Command> commands = getCommands(context);
         context.setCommandMap(commands);
 
-        System.out.println("Hi there! Press q or exit to quit");
+        System.out.println("Hi there! Welcome to Task Manager");
+        System.out.println("Now you are here:" + context.getCurrentDirectory());
+        System.out.println("Enter \" help \" to see the list of all commands... \n" +
+                "You can also enter a name of command and argument split by space if you allready know them. \n" +
+                "Or enter \"q\" or \"exit\" to quit if you have finished you work.");
         performCommands(context, commands);
     }
 

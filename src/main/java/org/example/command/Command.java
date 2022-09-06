@@ -4,11 +4,10 @@ import lombok.RequiredArgsConstructor;
 
 import java.util.List;
 
-import java.util.List;
 @RequiredArgsConstructor
 public abstract class Command {
 
-    interface COLOR_KEYS{
+    interface COLOR_KEYS {
         String ANSI_CYAN = "\u001B[36m";
         String ANSI_RESET = "\u001B[0m";
         String ANSI_RED = "\u001B[31m";

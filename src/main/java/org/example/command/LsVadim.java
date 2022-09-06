@@ -24,17 +24,17 @@ public class LsVadim extends Command {
         // з варіантом поточної папки якщо не має аргументу і
         // з варіантом вибору папки якщо є аргумент
         File folder;
-        if (args.isEmpty()){
-           folder = context.getCurrentDirectory();
+        if (args.isEmpty()) {
+            folder = context.getCurrentDirectory();
         } else {
             folder = new File(args.get(0));
         }
-        if (!folder.isDirectory()){
+        if (!folder.isDirectory()) {
             throw new IllegalArgumentException("folder is not a Directory");
         }
         int in = 0;
         StringBuilder builder = new StringBuilder();
-        printLSTree(folder,in, builder);
+        printLSTree(folder, in, builder);
         return builder.toString();
     }
 
