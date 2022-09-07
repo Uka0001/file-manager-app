@@ -9,7 +9,7 @@ public class Find extends Command implements FindFile {
 
     @Override
     public String execute(List<String> args) {
-        if (args.isEmpty() || args.get(0).isEmpty()){
+        if (args.isEmpty() || args.get(0).isEmpty()) {
             return "Enter the args pls.";
         } else {
             findFile(args, context);

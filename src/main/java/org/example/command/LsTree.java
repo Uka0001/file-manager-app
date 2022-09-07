@@ -21,7 +21,7 @@ public class LsTree extends Command implements FindFile {
                                            StringBuilder sb, int depth) {
         // Add null point exception check
         int askedDepth;
-        if (!args.isEmpty()){
+        if (!args.isEmpty()) {
             askedDepth = Integer.parseInt(args.get(0));
         } else {
             askedDepth = 1;

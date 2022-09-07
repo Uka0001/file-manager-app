@@ -15,7 +15,7 @@ public class Main {
     public static void main(String[] args) {
         Context context = new Context(null, new File(System.getenv().get("PWD")));
         Map<String, Command> commands = getCommands(context);
-        context.setCommandMap(commands);
+        context.getCommandMap();
 
         System.out.println("Hi there! Welcome to Task Manager");
         System.out.println("Now you are here:" + context.getCurrentDirectory());
